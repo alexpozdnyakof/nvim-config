@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason
 
 ---@type LazySpec
@@ -11,7 +9,21 @@ return {
     opts = {
       -- Make sure to use the names found in `:Mason`
       ensure_installed = {
-        -- install language servers
+        "ast-grep",
+        "deno",
+        "js-debug-adapter",
+        "json-lsp",
+        "marksman",
+        "mdx-analyzer",
+        "ocaml-lsp",
+        "oxlint",
+        "prettierd",
+        "selene",
+        "stylua",
+        "taplo",
+        "typescript-language-server",
+        "rust-analyzer",
+        -- install languageage servers
         "lua-language-server",
 
         -- install formatters
