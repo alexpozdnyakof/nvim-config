@@ -10,7 +10,6 @@ return {
       -- Make sure to use the names found in `:Mason`
       ensure_installed = {
         "ast-grep",
-        "deno",
         "js-debug-adapter",
         "json-lsp",
         "marksman",
@@ -30,7 +29,6 @@ return {
         "stylua",
 
         -- install debuggers
-        "debugpy",
 
         -- install any other package
         "tree-sitter-cli",
