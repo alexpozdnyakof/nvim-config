@@ -39,4 +39,14 @@ return {
   },
 
   "kdheepak/lazygit.nvim",
+  {
+    "stevearc/overseer.nvim",
+    opts = {},
+  },
+  n = {
+    ["<leader>to"] = { "<cmd>OverseerToggle<cr>", desc = "Toggle Overseer window" },
+    ["<leader>tr"] = { "<cmd>OverseerRun<cr>", desc = "Run task" },
+    ["<leader>tl"] = { "<cmd>OverseerRunLast<cr>", desc = "Run last task" },
+    ["<leader>tc"] = { "<cmd>OverseerClearCache<cr>", desc = "Clear Overseer cache" },
+  },
 }
