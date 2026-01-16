@@ -17,6 +17,11 @@ return {
           dark = "wave", -- try "dragon" !
           light = "lotus",
         },
+        overrides = function(colors)
+          return {
+            Visual = { bg = colors.palette.waveBlue2, fg = colors.theme.ui.fg },
+          }
+        end,
         colors = {
           theme = {
             all = {
