@@ -148,12 +148,17 @@ return {
 
     config = function()
       vim.g.opencode_opts = {
-        provider = {
-          enabled = nil,
+        server = {
+          autostart = false,
+          host = "192.168.88.137",
+          port = 42420,
+          url = "http://192.168.88.137:8000/v1",
         },
-        events = { reload = true },
-        start_on_load = false,
-        port = 42420,
+
+        ui = false,
+        events = {
+          reload = true,
+        },
       }
       vim.o.autoread = true
     end,
