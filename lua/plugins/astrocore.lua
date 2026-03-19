@@ -45,11 +45,24 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        autoread = true,
+        updatetime = 1000,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+      },
+    },
+    autocmds = {
+      autoread_files = {
+        {
+          event = { "FocusGained", "BufEnter", "CursorHold", "CursorHoldI" },
+          pattern = "*",
+          callback = function()
+            if vim.fn.mode() ~= "c" then vim.cmd "checktime" end
+          end,
+        },
       },
     },
     -- Mappings can be configured through AstroCore as well.
