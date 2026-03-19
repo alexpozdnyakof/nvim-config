@@ -57,6 +57,12 @@ return {
   {
     "coder/claudecode.nvim",
     dependencies = { "folke/snacks.nvim" },
+    opts = {
+      focus_after_send = false,
+      terminal = {
+        provider = "none",
+      },
+    },
     config = true,
     keys = {
       { "<leader>a", nil, desc = "AI/Claude Code" },
@@ -76,19 +82,6 @@ return {
       -- Diff management
       { "<leader>aa", "<cmd>ClaudeCodeDiffAccept<cr>", desc = "Accept diff" },
       { "<leader>ad", "<cmd>ClaudeCodeDiffDeny<cr>", desc = "Deny diff" },
-    },
-    provider = "custom",
-    custom = {
-      endpoint = "http://localhost:11434/api/generate",
-      model = "qwen-coder",
-      request = function(prompt)
-        return {
-          model = "qwen-coder",
-          prompt = prompt,
-          stream = false,
-        }
-      end,
-      parse_response = function(body) return body.response end,
     },
   },
   {
