@@ -143,9 +143,9 @@ return {
       vim.g.opencode_opts = {
         server = {
           autostart = false,
-          host = "192.168.88.137",
+          host = "192.168.88.138",
           port = 42420,
-          url = "http://192.168.88.137:8000/v1",
+          url = "http://192.168.88.138:8000/v1",
         },
 
         ui = false,
