@@ -25,3 +25,5 @@ end
 
 require "lazy_setup"
 require "polish"
+vim.o.exrc = true
+vim.o.secure = true

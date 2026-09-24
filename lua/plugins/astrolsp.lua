@@ -35,37 +35,8 @@ return {
       --   return true
       -- end
     },
+    servers = { "vtsls" },
     -- enable servers that you already have installed without mason
-    servers = {
-      -- "pyright"
-    },
-    -- customize language server configuration options passed to `lspconfig`
-    ---@diagnostic disable: missing-fields
-    config = {
-      ts_ls = { -- или vtsls, если используешь его
-        settings = {
-          typescript = {
-            inlayHints = {
-              includeInlayParameterNameHints = "all", -- "none" | "literals" | "all"
-              includeInlayParameterNameHintsWhenArgumentMatchesName = false,
-              includeInlayFunctionParameterTypeHints = true,
-              includeInlayVariableTypeHints = true,
-              includeInlayVariableTypeHintsWhenTypeMatchesName = false,
-              includeInlayPropertyDeclarationTypeHints = true,
-              includeInlayFunctionLikeReturnTypeHints = true,
-              includeInlayEnumMemberValueHints = true,
-            },
-          },
-          javascript = {
-            inlayHints = {
-              -- те же поля
-              includeInlayVariableTypeHints = true,
-              includeInlayFunctionLikeReturnTypeHints = true,
-            },
-          },
-        },
-      },
-    },
     -- customize how language servers are attached
     handlers = {
       -- a function without a key is simply the default handler, functions take two parameters, the server name and the configured options table for that server
