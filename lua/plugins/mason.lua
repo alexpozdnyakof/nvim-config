@@ -20,7 +20,6 @@ return {
         "selene",
         "stylua",
         "taplo",
-        "typescript-language-server",
         "rust-analyzer",
         -- install languageage servers
         "lua-language-server",
