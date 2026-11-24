@@ -1,5 +1,7 @@
 ---@type LazySpec
 return {
+  -- AstroNvim pins ^2.2; v3.1+ unwraps Neovim 0.12 iter_matches TSNode[]
+  { "stevearc/aerial.nvim", version = "^4" },
   {
     "rebelot/kanagawa.nvim",
     config = function()
