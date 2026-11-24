@@ -18,6 +18,8 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.mdx" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.editing-support.conform-nvim" },
   { import = "astrocommunity.split-and-window.neominimap-nvim" },
   { import = "astrocommunity.docker.lazydocker" },
